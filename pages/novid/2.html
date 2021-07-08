@@ -169,11 +169,11 @@
          
          if ( 200 === xhr.status ) {
                      try {
-                     	response = JSON.parse( xhr.response );
+                        response = JSON.parse( xhr.response );
          
-                     	reload = response.data.reload;
+                        reload = response.data.reload;
                      } catch ( e ) {
-                     	reload = false;
+                        reload = false;
                      }
                  }
          
@@ -189,7 +189,7 @@
          return true;
          }
       </script>
-      <script>cookieAuthorName = "";cookieAuthorEmail = "";</script>	
+      <script>cookieAuthorName = "";cookieAuthorEmail = "";</script> 
       <noscript>
          <style>.woocommerce-product-gallery{ opacity: 1 !important; }</style>
       </noscript>
@@ -200,48 +200,48 @@
       <link rel="apple-touch-icon" href="../favicon.png" />
       <meta name="msapplication-TileImage" content="https://learts-4437.kxcdn.com/wp-content/uploads/2019/01/favicon.jpg" />
       <script type="text/javascript">function setREVStartSize(e){
-         //window.requestAnimationFrame(function() {				 
-         	window.RSIW = window.RSIW===undefined ? window.innerWidth : window.RSIW;	
-         	window.RSIH = window.RSIH===undefined ? window.innerHeight : window.RSIH;	
-         	try {								
-         		var pw = document.getElementById(e.c).parentNode.offsetWidth,
-         			newh;
-         		pw = pw===0 || isNaN(pw) ? window.RSIW : pw;
-         		e.tabw = e.tabw===undefined ? 0 : parseInt(e.tabw);
-         		e.thumbw = e.thumbw===undefined ? 0 : parseInt(e.thumbw);
-         		e.tabh = e.tabh===undefined ? 0 : parseInt(e.tabh);
-         		e.thumbh = e.thumbh===undefined ? 0 : parseInt(e.thumbh);
-         		e.tabhide = e.tabhide===undefined ? 0 : parseInt(e.tabhide);
-         		e.thumbhide = e.thumbhide===undefined ? 0 : parseInt(e.thumbhide);
-         		e.mh = e.mh===undefined || e.mh=="" || e.mh==="auto" ? 0 : parseInt(e.mh,0);		
-         		if(e.layout==="fullscreen" || e.l==="fullscreen") 						
-         			newh = Math.max(e.mh,window.RSIH);					
-         		else{					
-         			e.gw = Array.isArray(e.gw) ? e.gw : [e.gw];
-         			for (var i in e.rl) if (e.gw[i]===undefined || e.gw[i]===0) e.gw[i] = e.gw[i-1];					
-         			e.gh = e.el===undefined || e.el==="" || (Array.isArray(e.el) && e.el.length==0)? e.gh : e.el;
-         			e.gh = Array.isArray(e.gh) ? e.gh : [e.gh];
-         			for (var i in e.rl) if (e.gh[i]===undefined || e.gh[i]===0) e.gh[i] = e.gh[i-1];
-         								
-         			var nl = new Array(e.rl.length),
-         				ix = 0,						
-         				sl;					
-         			e.tabw = e.tabhide>=pw ? 0 : e.tabw;
-         			e.thumbw = e.thumbhide>=pw ? 0 : e.thumbw;
-         			e.tabh = e.tabhide>=pw ? 0 : e.tabh;
-         			e.thumbh = e.thumbhide>=pw ? 0 : e.thumbh;					
-         			for (var i in e.rl) nl[i] = e.rl[i]<window.RSIW ? 0 : e.rl[i];
-         			sl = nl[0];									
-         			for (var i in nl) if (sl>nl[i] && nl[i]>0) { sl = nl[i]; ix=i;}															
-         			var m = pw>(e.gw[ix]+e.tabw+e.thumbw) ? 1 : (pw-(e.tabw+e.thumbw)) / (e.gw[ix]);					
-         			newh =  (e.gh[ix] * m) + (e.tabh + e.thumbh);
-         		}				
-         		if(window.rs_init_css===undefined) window.rs_init_css = document.head.appendChild(document.createElement("style"));					
-         		document.getElementById(e.c).height = newh+"px";
-         		window.rs_init_css.innerHTML += "#"+e.c+"_wrapper { height: "+newh+"px }";				
-         	} catch(e){
-         		console.log("Failure at Presize of Slider:" + e)
-         	}					   
+         //window.requestAnimationFrame(function() {            
+            window.RSIW = window.RSIW===undefined ? window.innerWidth : window.RSIW;   
+            window.RSIH = window.RSIH===undefined ? window.innerHeight : window.RSIH;  
+            try {                      
+               var pw = document.getElementById(e.c).parentNode.offsetWidth,
+                  newh;
+               pw = pw===0 || isNaN(pw) ? window.RSIW : pw;
+               e.tabw = e.tabw===undefined ? 0 : parseInt(e.tabw);
+               e.thumbw = e.thumbw===undefined ? 0 : parseInt(e.thumbw);
+               e.tabh = e.tabh===undefined ? 0 : parseInt(e.tabh);
+               e.thumbh = e.thumbh===undefined ? 0 : parseInt(e.thumbh);
+               e.tabhide = e.tabhide===undefined ? 0 : parseInt(e.tabhide);
+               e.thumbhide = e.thumbhide===undefined ? 0 : parseInt(e.thumbhide);
+               e.mh = e.mh===undefined || e.mh=="" || e.mh==="auto" ? 0 : parseInt(e.mh,0);     
+               if(e.layout==="fullscreen" || e.l==="fullscreen")                 
+                  newh = Math.max(e.mh,window.RSIH);              
+               else{             
+                  e.gw = Array.isArray(e.gw) ? e.gw : [e.gw];
+                  for (var i in e.rl) if (e.gw[i]===undefined || e.gw[i]===0) e.gw[i] = e.gw[i-1];             
+                  e.gh = e.el===undefined || e.el==="" || (Array.isArray(e.el) && e.el.length==0)? e.gh : e.el;
+                  e.gh = Array.isArray(e.gh) ? e.gh : [e.gh];
+                  for (var i in e.rl) if (e.gh[i]===undefined || e.gh[i]===0) e.gh[i] = e.gh[i-1];
+                                 
+                  var nl = new Array(e.rl.length),
+                     ix = 0,                 
+                     sl;               
+                  e.tabw = e.tabhide>=pw ? 0 : e.tabw;
+                  e.thumbw = e.thumbhide>=pw ? 0 : e.thumbw;
+                  e.tabh = e.tabhide>=pw ? 0 : e.tabh;
+                  e.thumbh = e.thumbhide>=pw ? 0 : e.thumbh;               
+                  for (var i in e.rl) nl[i] = e.rl[i]<window.RSIW ? 0 : e.rl[i];
+                  sl = nl[0];                         
+                  for (var i in nl) if (sl>nl[i] && nl[i]>0) { sl = nl[i]; ix=i;}                                             
+                  var m = pw>(e.gw[ix]+e.tabw+e.thumbw) ? 1 : (pw-(e.tabw+e.thumbw)) / (e.gw[ix]);             
+                  newh =  (e.gh[ix] * m) + (e.tabh + e.thumbh);
+               }           
+               if(window.rs_init_css===undefined) window.rs_init_css = document.head.appendChild(document.createElement("style"));              
+               document.getElementById(e.c).height = newh+"px";
+               window.rs_init_css.innerHTML += "#"+e.c+"_wrapper { height: "+newh+"px }";          
+            } catch(e){
+               console.log("Failure at Presize of Slider:" + e)
+            }                 
          //});
           };
       </script>
@@ -261,7 +261,7 @@
          .learts-menu-grid .menu-item.tag-new:before, .learts-menu-grid .menu-item.tag-hot:before {
          right: 120px;
          }
-         }		
+         }     
       </style>
       <style id="learts_options-dynamic-css" title="dynamic-css" class="redux-options-output">.header-tools .header-login a,.site-header.sticky-header .header-tools .header-login a,.header-overlap .site-header:hover .header-tools .header-login a{color:#333333;}.site-header, .header-overlap .sticky-header, .header-overlap .site-header.site-header:hover{background-color:#ffffff;}.site-header{border-color:transparent;}.topbar{background-color:#72A499;}.topbar .topbar-text, .topbar-close-btn, .topbar .social-links > li > a > i, .topbar .switcher-menu > .menu > li > a, .topbar .topbar-menu > .menu > li > a{color:#ffffff;}.header-search a.toggle,.site-header.sticky-header .header-search a.toggle,.header-overlap .site-header:hover .header-search a.toggle{color:#333333;}.header-wishlist a.toggle,.site-header.sticky-header .header-wishlist a.toggle,.header-overlap .site-header:hover .header-wishlist a.toggle{color:#333333;}.header-wishlist a.toggle .wishlist-count,.site-header.sticky-header .header-wishlist a.toggle .wishlist-count,.header-overlap .site-header:hover .header-wishlist a.toggle .wishlist-count{color:#FFFFFF;}.header-wishlist a.toggle .wishlist-count,.site-header.sticky-header .header-wishlist a.toggle .wishlist-count,.header-overlap .site-header:hover .header-wishlist a.toggle .wishlist-count{background-color:#F8796C;}.header-wishlist a.toggle .wishlist-count,.site-header.sticky-header .header-wishlist a.toggle .wishlist-count,.header-overlap .site-header:hover .header-wishlist a.toggle .wishlist-count{border-color:#F8796C;}.header-minicart a.toggle,.header-tools.layout-only-mini-cart .header-minicart a.toggle,.site-header.sticky-header .header-minicart a.toggle,.header-overlap .site-header:hover .header-minicart a.toggle{color:#333333;}.header-minicart a.toggle .minicart-count,.header-tools.layout-only-mini-cart .header-minicart a.toggle .minicart-count,.site-header.sticky-header .header-minicart a.toggle .minicart-count,.header-overlap .site-header:hover .header-minicart a.toggle .minicart-count{color:#ffffff;}.header-minicart a.toggle .minicart-count,.header-tools.layout-only-mini-cart .header-minicart a.toggle .minicart-count,.site-header.sticky-header .header-minicart a.toggle .minicart-count,.header-overlap .site-header:hover .header-minicart a.toggle .minicart-count{background-color:#F8796C;}.header-minicart a.toggle .minicart-count,.header-tools.layout-only-mini-cart .header-minicart a.toggle .minicart-count,.site-header.sticky-header .header-minicart a.toggle .minicart-count,.header-overlap .site-header:hover .header-minicart a.toggle .minicart-count{border-color:#F8796C;}.offcanvas-btn .ti-menu,.site-header.sticky-header .offcanvas-btn .ti-menu,.header-overlap .site-header:hover .offcanvas-btn .ti-menu{color:#333333;}.page-title h1, .page-title a{color:#333333;}.page-title .page-subtitle{color:#ababab;}.page-title:before{background-color:rgba(0,10,0,0.01);}.page-title{background-image:url('../wp-content/uploads/2018/10/page-bg.jpg');}.site-breadcrumbs{color:#333333;}.site-breadcrumbs ul li:after{color:#333333;}.site-breadcrumbs .insight_core_breadcrumb a{color:#999999;}.site-breadcrumbs .insight_core_breadcrumb a:hover{color:#999999;}.site-menu .menu > ul > li > a, .site-menu .menu > li > a,  .site-header.sticky-header .site-menu .menu > ul > li > a,  .site-header.sticky-header .site-menu .menu > li > a, .header-overlap .site-header:hover .site-menu .menu > ul > li > a, .header-overlap .site-header:hover .site-menu .menu > li > a{color:#7E7E7E;}.site-menu .menu > ul > li > a:hover, .site-menu .menu > li > a:hover,  .site-header.sticky-header .site-menu .menu > ul > li > a:hover,  .site-header.sticky-header .site-menu .menu > li > a:hover, .header-overlap .site-header:hover .site-menu .menu > ul > li > a:hover, .header-overlap .site-header:hover .site-menu .menu > li > a:hover{color:#333333;}.site-menu .menu > ul > li .children a, .site-menu .menu > li .sub-menu a, .site-header.sticky-header .site-menu .menu > ul > li .children a,.site-header.sticky-header .site-menu .menu > li .sub-menu a{color:#7E7E7E;}.site-menu .menu > ul > li .children a:hover, .site-menu .menu > li .sub-menu a:hover, .site-header.sticky-header .site-menu .menu > ul > li .children a:hover,.site-header.sticky-header .site-menu .menu > li .sub-menu a:hover{color:#333333;}.site-header.sticky-header .mobile-menu-btn path,.mobile-menu-btn path,.header-overlap .site-header:hover .mobile-menu-btn path,.mobile-menu-btn path{stroke:#666666;}.area-404{background-repeat:no-repeat;background-attachment:inherit;background-position:center center;background-image:url('../wp-content/themes/learts/assets/images/404-bg.jpg');background-size:cover;}.product-badges span.hot{color:#ffffff;}.product-badges span.hot:hover{color:#ffffff;}.product-badges span.hot{background-color:#c61932;}.product-badges span.new{color:#ffffff;}.product-badges span.new:hover{color:#ffffff;}.product-badges span.new{background-color:#fbaf5d;}.product-badges span.sale{color:#ffffff;}.product-badges span.sale:hover{color:#ffffff;}.product-badges span.sale{background-color:#4accb0;}.site-footer{background-color:#f8f8f8;}.site-footer .site-copyright{background-color:#ffffff;}.site-footer .site-copyright{color:#999999;}.site-footer .site-copyright a{color:#7e7e7e;}.site-footer .site-copyright a:hover{color:#333333;}body, .mega-menu-content, .site-menu .sub-menu, .tm-shortcode.learts-product-categories .count{font-family:Futura,Arial, Helvetica, sans-serif;line-height:32px;font-weight:400;font-style:normal;color:#696969;font-size:18px;font-display:swap;}.secondary-font, .tm-icon-box.secondary-font .title,.tm-icon-box.secondary-font a{font-family:"Playfair Display";font-weight:normal;font-style:normal;font-display:swap;}.tertiary-font, .tm-icon-box.tertiary-font .title,.tm-icon-box.tertiary-font a{font-family:Yellowtail,Arial, Helvetica, sans-serif;font-weight:400;font-style:normal;font-display:swap;}h1,h2,h3,h4,h5,h6,h1 a,h2 a,h3 a,h4 a,h5 a, h6 a, .learts-product-tabs .product-filter.hover-effect-cloudy li > a,
          .learts-product-tabs .product-filter.hover-effect-botanical li > a, .learts-product-tabs .product-filter.hover-effect-line li > a,
@@ -274,17 +274,93 @@
          <style> .wpb_animate_when_almost_visible { opacity: 1; }</style>
       </noscript>
    </head>
-   <body class="product-template-default single single-product postid-1755 theme-learts woocommerce woocommerce-page woocommerce-no-js site-header-split wpb-js-composer js-comp-ver-6.6.0 vc_responsive">
-      <div class="main-container">
+   <body class="product-template-default single single-product postid-1753 theme-learts woocommerce woocommerce-page woocommerce-no-js site-header-split wpb-js-composer js-comp-ver-6.6.0 vc_responsive">
+      <div class="site-mobile-menu">
+        
+         <div class="menu-mobile-menu-container">
+             <ul id="site-mobile-menu" class="menu">
+               <li id="menu-item-3043" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-has-children menu-item-3043">
+                  <a href="../../index.html">HOME</a>
+               <li id="menu-item-3043" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-has-children menu-item-3043">
+                  <a href="../../contato.html">CONTATO</a>
+               <li id="menu-item-3043" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-has-children menu-item-3043">
+                  <a href="../../sobre.html">SOBRE</a>
+                 
+               </li>
+            </ul>
+         </div>
+        
+         <ul class="social-links">
+           
+            <li class="has-title hint--top hint--bounce"
+               aria-label="Facebook">
+               <a
+                  href="https://www.facebook.com/lojajaquelineandrade"
+                  target="_self">                                                   <i class="fa fa-facebook" aria-hidden="true"></i>
+               <span class="title">Facebook</span>
+               </a>                 
+            </li>
+            <li class="has-title hint--top hint--bounce"
+               aria-label="Instagram">
+               <a
+                  href="https://www.instagram.com/lojajaquelineandrade"
+                  target="_self">                                                   <i class="fa fa-instagram" aria-hidden="true"></i>
+               <span class="title">Instagram</span>
+               </a>                 
+            </li>
+            
+         </ul>
+      </div>
+      
+      <div id="page-container">
+        
+         <header class="site-header header-split header-scheme--light">
+            <div class=" container wide">
+               <div class="row">
+                  
+                  <div class="site-logo">
+                     
+                  </div>
+                  <div class="site-menu hidden-lg-down menu-align-center  ">
+                     <div class="menu-main-menu-container">
+                        <ul id="menu-main-menu" class="menu">
+                           <li id="menu-item-28" class="menu-item menu-item-type-custom menu-item-object-custom  menu-item-28 mega-menu-default mega-menu">
+                              <a href="../../index.html"><span class="menu-item-text">HOME</span></a>
+                              
+                           </li>
+                           <li id="menu-item-29" class="menu-item menu-item-type-custom menu-item-object-custom  menu-item-29 mega-menu-default mega-menu">
+                              <a href="../../contato.html"><span class="menu-item-text">CONTATO</span></a>
+                              
+                           </li>
+                           <li id="menu-item-30" class="menu-item menu-item-type-custom menu-item-object-custom  menu-item-30">
+                              <a href="../../sobre.html"><span class="menu-item-text">SOBRE</span></a>
+                              
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="right-col header-tools">
+                     
+                     
+                     <div class="mobile-menu-btn hidden-xl-up">
+                        <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 800 600">
+                           <path d="M300,220 C300,220 520,220 540,220 C740,220 640,540 520,420 C440,340 300,200 300,200"
+                              id="top"></path>
+                           <path d="M300,320 L540,320" id="middle"></path>
+                           <path d="M300,210 C300,210 520,210 540,210 C740,210 640,530 520,410 C440,330 300,190 300,190"
+                              id="bottom" transform="translate(480, 320) scale(1, -1) translate(-480, -318) "></path>
+                        </svg>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </header>
+         <!-- End Header -->
+         <div class="main-container">
             <div class="page-title page-title-bg_image page-title-shop no-parallax">
                <div class="container">
                   <div class="row">
-                     <div class="col-xs-12">
-                        
-                        <div class="site-breadcrumbs">
-                           
-                        </div>
-                     </div>
+                     
                   </div>
                </div>
             </div>
@@ -294,9 +370,11 @@
                      <div
                         class="col-md-9 col-lg-8 hidden-xs nav-filter">
                         <ul class="product-tabs">
-                           <li data-filter="*" class="active"><a href="../../index.html">Novidades do Mês</a></li>
+                           <li data-filter="*" class="active"><a href="../../index.html">Novidades do mês</a></li>
+                           
                         </ul>
                      </div>
+                     
                   </div>
                </div>
             </div>
@@ -329,7 +407,7 @@
                                             
                                              
                                           </div>
-                                          	
+                                             
                                        </figure>
                                     </div>
                                     
@@ -341,10 +419,8 @@
                                  <h3 class="product_title entry-title">
                                     Balão Chá de Revelação
                                  </h3>
-                                 <p class="price"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">R$</span>10.00 - a vista ou pix</bdi></span> <br> <span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">R$</span>11.00 - 3x no crédito</bdi></span></p>
-                                 <div class="woocommerce-product-details__short-description">
-                                    <p>Tênis Fila</p>
-                                 </div>
+                                 <p class="price"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">R$</span>10.00 - à vista ou pix</bdi></span> <br> <span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">R$</span>11.00 - 3x no crédito</bdi></span></p>
+                                 
                                  
                                  <table class="product_meta">
                                     
@@ -458,9 +534,9 @@
      
       <script type="text/javascript">
          (function () {
-         	var c = document.body.className;
-         	c = c.replace(/woocommerce-no-js/, 'woocommerce-js');
-         	document.body.className = c;
+            var c = document.body.className;
+            c = c.replace(/woocommerce-no-js/, 'woocommerce-js');
+            document.body.className = c;
          })();
       </script>
       <link rel='stylesheet' id='insight-popup-css'  href='../wp-content/plugins/insight-core/inc/popup/assets/css/popup9f31.css?ver=5.7.2' type='text/css' media='all' />
