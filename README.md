@@ -1,1 +1,0 @@
-# lojajaquelineandrade.github.io
